@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let keyword = "";
     let page = 1;
-    const accessKey = "qsRMVY7ynRLu3Um3_y2UuqWhE7Qyiewb5O_Nb0gj8IA"; // ✅ your key
+    const accessKey = " "// ✅ your key
 
     async function searchImages() {
         if (!keyword) return;
 
         const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}`;
-        console.log("Fetching:", url); // ✅ Debugging
+        console.log("Fetching:", url); 
 
         try {
             const response = await fetch(url);
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // 🔍 Form search
     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
         keyword = searchBox.value.trim();
@@ -59,21 +58,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 📌 Show more
     showMoreBtn.addEventListener("click", () => {
         page++;
         searchImages();
     });
 
-    // 📂 Sidebar category clicks
     sidebarLinks.forEach(link => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
             keyword = link.dataset.category;
-            console.log("Category clicked:", keyword); // ✅ Debugging
+            console.log("Category clicked:", keyword);
             searchBox.value = "";
             page = 1;
             searchImages();
         });
     });
 });
+
