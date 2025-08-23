@@ -24,3 +24,13 @@ A simple and responsive **Weather App** that allows users to check the current w
 ---
 
 ## 📂 Project Structure
+weather-app/
+│-- index.html # Main HTML file
+│-- style.css # Stylesheet
+│-- images/ # Weather icons (clouds, rain, sun, etc.)
+│-- README.md # Documentation
+
+
+##Screenshorts
+
+
