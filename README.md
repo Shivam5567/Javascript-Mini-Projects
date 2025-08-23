@@ -1,4 +1,3 @@
-<img width="655" height="745" alt="image" src="https://github.com/user-attachments/assets/e56d8ca4-a887-45cb-96e7-d11097cc1900" /># 🌦️ Weather App
 
 A simple and responsive **Weather App** that allows users to check the current weather of any city in the world. It fetches real-time weather data from the **OpenWeather API** and displays temperature, humidity, wind speed, and weather conditions with icons.
 
