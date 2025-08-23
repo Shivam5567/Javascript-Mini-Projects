@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Search Engine</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+       <aside class="sidebar">
+    <h2>Explore</h2>
+    <nav>
+        <ul>
+            <li><a href="#" data-category="editorial">Editorial</a></li>
+            <li><a href="#" data-category="wallpapers">Wallpapers</a></li>
+            <li><a href="#" data-category="nature">Nature</a></li>
+            <li><a href="#" data-category="people">People</a></li>
+            <li><a href="#" data-category="architecture">Architecture</a></li>
+            <li><a href="#" data-category="business">Business</a></li>
+            <li><a href="#" data-category="technology">Technology</a></li>
+            <li><a href="#" data-category="travel">Travel</a></li>
+        </ul>
+    </nav>
+</aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Image Search Engine</h1>
+                <form id="search-form">
+                    <input type="text" id="search-box" placeholder="Search anything here">
+                    <button type="submit">Search</button>
+                </form>
+            </header>
+
+            <section>
+                <div id="search-result"></div>
+                <button id="show-more-btn">Show more</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
