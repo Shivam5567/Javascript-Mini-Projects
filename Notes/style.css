@@ -1,0 +1,13 @@
+.note-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.input-box {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  min-width: 200px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
